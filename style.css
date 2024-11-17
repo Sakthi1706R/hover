@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Geist+Mono:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+}
+:root{
+    --dark:#333;
+    --white:#fff;
+    --primary:#ff0057;
+}
+
+body {
+    min-height:100vh;
+    background-color:  var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card{
+    cursor:pointer;
+}
+
+.container .card .box{
+    width:300px;
+    height: 200px;
+    background-color:#fff;
+    transition: 0.5s;
+}
+
+
+.container .card .box.box-1{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100px);
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    position: relative;
+    z-index: 1;
+}
+
+.container .card:hover .box.box-1{
+    background-color:var(--primary);
+    color: #fff;
+    transform: translateY(0px);
+
+}
+
+.box-1 h3{
+    font-size:25px;
+    text-transform: uppercase;
+    font-weight: 800px;
+    letter-spacing: 1px;
+
+}
+.container{
+    display: flex;
+    width: 800px;
+    min-height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container .card .box.box-2{
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 20px 50px rgba(0 ,0 ,0 ,0.8);
+    transform: translateY(-100px);
+
+}
+.container .card:hover .box.box-2{
+    transform: translateY(0);
+}
+
+.box-2 a {
+    align-self: flex-start;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: var (--dark);
+    padding: 5px 8px;
+    border: 1px solid var(--dark);
+    transition: 0.5s;
+
+}
+
+.box-2 a:hover{
+    background-color: var(-- primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
